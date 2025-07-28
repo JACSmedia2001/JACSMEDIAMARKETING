@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Profesional con IA - Portafolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    header {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        padding: 40px 0;
+    }
+    
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    header p {
+        font-size: 1.2em;
+        opacity: 0.9;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .service-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .service-card h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+    
+    .service-card p {
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+    
+    .price {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    .portfolio-section {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .portfolio-section h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+    }
+    
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .portfolio-item {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+        border-color: #667eea;
+        transform: scale(1.05);
+    }
+    
+    .sample-design {
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .contact-section {
+        background: rgba(255,255,255,0.9);
+        border-radius: 20px;
+        padding: 40px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+    
+    .contact-section h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .contact-item {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+    
+    .contact-item:hover {
+        transform: scale(1.1);
+    }
+    
+    .guarantee {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 30px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2em;
+        }
+        
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .contact-info {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 DISEÑO PROFESIONAL CON IA</h1>
+            <p>Logotipos, posts, flyers y más - Entrega en 24 horas</p>
+        </header>
+
+```
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Logotipos Profesionales</h3>
+            <p>Logotipos únicos y modernos para tu negocio. Múltiples variaciones y formatos incluidos (PNG, JPG, vectorial).</p>
+            <div class="price">$300 - $600</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Posts para Redes Sociales</h3>
+            <p>Diseños llamativos para Instagram, Facebook y WhatsApp Business. Perfectos para promocionar tu negocio.</p>
+            <div class="price">$80 - $150</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Flyers y Volantes</h3>
+            <p>Promociona eventos, ofertas especiales o servicios con diseños que captan la atención. Listos para imprimir.</p>
+            <div class="price">$150 - $300</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🍽️</div>
+            <h3>Menús de Restaurante</h3>
+            <p>Menús elegantes y fáciles de leer. Diseño profesional que hace ver tu comida más apetitosa.</p>
+            <div class="price">$400 - $800</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💼</div>
+            <h3>Tarjetas de Presentación</h3>
+            <p>Tarjetas modernas y profesionales que causan una excelente primera impresión.</p>
+            <div class="price">$200 - $400</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>Banners Publicitarios</h3>
+            <p>Banners para redes sociales, sitios web o impresión. Diseños que convierten visitantes en clientes.</p>
+            <div class="price">$250 - $500</div>
+        </div>
+    </div>
+
+    <div class="portfolio-section">
+        <h2>📁 Ejemplos de Nuestro Trabajo</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://imgur.com/OCZscwc.png" alt="Logo Restaurante" style="width: 100%; height: 150px; object-fit: contain; border-radius: 8px; margin-bottom: 15px; background: white;">
+                <h4>El Sabor Mexicano</h4>
+                <p>Logotipo moderno para restaurante familiar</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/ERjenih.png" alt="Post Instagram" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Promoción Especial</h4>
+                <p>Post para redes sociales - Ofertas</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/Ym0uT2d.png" alt="Flyer Evento" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Evento Especial</h4>
+                <p>Flyer elegante para celebración</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/AzIVkhQ.png" alt="Menú Digital" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Café Express</h4>
+                <p>Menú digital para cafetería</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/QV2Verg.png" alt="Tarjeta Negocio" style="width: 100%; height: 150px; object-fit: contain; border-radius: 8px; margin-bottom: 15px; background: white;">
+                <h4>Consultor Financiero</h4>
+                <p>Tarjeta profesional minimalista</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/9QkpIeR.png" alt="Banner Web" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Tienda Online</h4>
+                <p>Banner promocional para e-commerce</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="guarantee">
+        ✅ GARANTÍA: Si no quedas 100% satisfecho, te devolvemos tu dinero
+        <br>
+        ⚡ ENTREGA RÁPIDA: Máximo 24 horas | Revisiones ilimitadas incluidas
+    </div>
+
+    <div class="contact-section">
+        <h2>📞 ¿Listo para empezar?</h2>
+        <p>Contacta ahora y recibe tu diseño en menos de 24 horas</p>
+        
+        <div class="contact-info">
+            <a href="https://wa.me/5296147l8221" class="contact-item">
+                📱 WhatsApp: +52 961 471 8221
+            </a>
+            <a href="mailto:jacsmediamarketing@gmail.com" class="contact-item">
+                📧 jacsmediamarketing@gmail.com
+            </a>
+            <a href="#" class="contact-item">
+                📍 Tuxtla Gutiérrez, Chiapas
+            </a>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <h3>💡 ¿Cómo funciona?</h3>
+            <p><strong>1.</strong> Contáctame por WhatsApp con la descripción de lo que necesitas<br>
+            <strong>2.</strong> Te envío 3-5 opciones de diseño en máximo 24 horas<br>
+            <strong>3.</strong> Eliges tu favorito y hacemos ajustes si es necesario<br>
+            <strong>4.</strong> Recibes tu diseño final en alta calidad</p>
+            
+            <h3 style="margin-top: 20px;">💳 Formas de Pago</h3>
+            <p><strong>📱 Transferencia bancaria</strong> - 50% adelanto, 50% al entregar<br>
+            <strong>🏪 Depósito OXXO</strong> - Te enviamos datos por WhatsApp<br>
+            <strong>💰 Efectivo</strong> - Entregas locales en Tuxtla Gutiérrez<br>
+            <strong>⚡ MercadoPago</strong> - Link de pago seguro</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Animación suave al hacer scroll
+    window.addEventListener('scroll', function() {
+        const cards = document.querySelectorAll('.service-card, .portfolio-item');
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            const cardVisible = 150;
+            
+            if (cardTop < window.innerHeight - cardVisible) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+        });
+    });
+
+    // Inicializar animaciones
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.service-card, .portfolio-item');
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+    });
+</script>
+```
+
+</body>
+</html><!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Profesional con IA - Portafolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    header {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        padding: 40px 0;
+    }
+    
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    header p {
+        font-size: 1.2em;
+        opacity: 0.9;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .service-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .service-card h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+    
+    .service-card p {
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+    
+    .price {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    .portfolio-section {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .portfolio-section h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+    }
+    
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .portfolio-item {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+        border-color: #667eea;
+        transform: scale(1.05);
+    }
+    
+    .sample-design {
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .contact-section {
+        background: rgba(255,255,255,0.9);
+        border-radius: 20px;
+        padding: 40px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+    
+    .contact-section h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .contact-item {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+    
+    .contact-item:hover {
+        transform: scale(1.1);
+    }
+    
+    .guarantee {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 30px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2em;
+        }
+        
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .contact-info {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 DISEÑO PROFESIONAL CON IA</h1>
+            <p>Logotipos, posts, flyers y más - Entrega en 24 horas</p>
+        </header>
+
+```
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Logotipos Profesionales</h3>
+            <p>Logotipos únicos y modernos para tu negocio. Múltiples variaciones y formatos incluidos (PNG, JPG, vectorial).</p>
+            <div class="price">$300 - $600</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Posts para Redes Sociales</h3>
+            <p>Diseños llamativos para Instagram, Facebook y WhatsApp Business. Perfectos para promocionar tu negocio.</p>
+            <div class="price">$80 - $150</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Flyers y Volantes</h3>
+            <p>Promociona eventos, ofertas especiales o servicios con diseños que captan la atención. Listos para imprimir.</p>
+            <div class="price">$150 - $300</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🍽️</div>
+            <h3>Menús de Restaurante</h3>
+            <p>Menús elegantes y fáciles de leer. Diseño profesional que hace ver tu comida más apetitosa.</p>
+            <div class="price">$400 - $800</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💼</div>
+            <h3>Tarjetas de Presentación</h3>
+            <p>Tarjetas modernas y profesionales que causan una excelente primera impresión.</p>
+            <div class="price">$200 - $400</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>Banners Publicitarios</h3>
+            <p>Banners para redes sociales, sitios web o impresión. Diseños que convierten visitantes en clientes.</p>
+            <div class="price">$250 - $500</div>
+        </div>
+    </div>
+
+    <div class="portfolio-section">
+        <h2>📁 Ejemplos de Nuestro Trabajo</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://imgur.com/OCZscwc.png" alt="Logo Restaurante" style="width: 100%; height: 150px; object-fit: contain; border-radius: 8px; margin-bottom: 15px; background: white;">
+                <h4>El Sabor Mexicano</h4>
+                <p>Logotipo moderno para restaurante familiar</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/ERjenih.png" alt="Post Instagram" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Promoción Especial</h4>
+                <p>Post para redes sociales - Ofertas</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/Ym0uT2d.png" alt="Flyer Evento" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Evento Especial</h4>
+                <p>Flyer elegante para celebración</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/AzIVkhQ.png" alt="Menú Digital" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Café Express</h4>
+                <p>Menú digital para cafetería</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/QV2Verg.png" alt="Tarjeta Negocio" style="width: 100%; height: 150px; object-fit: contain; border-radius: 8px; margin-bottom: 15px; background: white;">
+                <h4>Consultor Financiero</h4>
+                <p>Tarjeta profesional minimalista</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://imgur.com/9QkpIeR.png" alt="Banner Web" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+                <h4>Tienda Online</h4>
+                <p>Banner promocional para e-commerce</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="guarantee">
+        ✅ GARANTÍA: Si no quedas 100% satisfecho, te devolvemos tu dinero
+        <br>
+        ⚡ ENTREGA RÁPIDA: Máximo 24 horas | Revisiones ilimitadas incluidas
+    </div>
+
+    <div class="contact-section">
+        <h2>📞 ¿Listo para empezar?</h2>
+        <p>Contacta ahora y recibe tu diseño en menos de 24 horas</p>
+        
+        <div class="contact-info">
+            <a href="https://wa.me/5296147l8221" class="contact-item">
+                📱 WhatsApp: +52 961 471 8221
+            </a>
+            <a href="mailto:jacsmediamarketing@gmail.com" class="contact-item">
+                📧 jacsmediamarketing@gmail.com
+            </a>
+            <a href="#" class="contact-item">
+                📍 Tuxtla Gutiérrez, Chiapas
+            </a>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <h3>💡 ¿Cómo funciona?</h3>
+            <p><strong>1.</strong> Contáctame por WhatsApp con la descripción de lo que necesitas<br>
+            <strong>2.</strong> Te envío 3-5 opciones de diseño en máximo 24 horas<br>
+            <strong>3.</strong> Eliges tu favorito y hacemos ajustes si es necesario<br>
+            <strong>4.</strong> Recibes tu diseño final en alta calidad</p>
+            
+            <h3 style="margin-top: 20px;">💳 Formas de Pago</h3>
+            <p><strong>📱 Transferencia bancaria</strong> - 50% adelanto, 50% al entregar<br>
+            <strong>🏪 Depósito OXXO</strong> - Te enviamos datos por WhatsApp<br>
+            <strong>💰 Efectivo</strong> - Entregas locales en Tuxtla Gutiérrez<br>
+            <strong>⚡ MercadoPago</strong> - Link de pago seguro</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Animación suave al hacer scroll
+    window.addEventListener('scroll', function() {
+        const cards = document.querySelectorAll('.service-card, .portfolio-item');
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            const cardVisible = 150;
+            
+            if (cardTop < window.innerHeight - cardVisible) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+        });
+    });
+
+    // Inicializar animaciones
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.service-card, .portfolio-item');
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+    });
+</script>
+```
+
+</body>
+</html>
